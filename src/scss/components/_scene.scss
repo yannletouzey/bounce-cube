@@ -1,0 +1,22 @@
+@use '../var';
+
+.scene{
+    width: 70%;
+    aspect-ratio: 1/1;
+    background-color: var.$background-color-scene;
+    perspective: 150rem;
+    box-shadow:0px 0px 30px 80px rgba(0,0,0,0.73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+    @keyframes spin {
+        0%{
+            transform: rotateX(75deg) rotateZ(25deg) rotateZ(0);
+        }
+        100%{
+            transform: rotateX(75deg) rotateZ(25deg) rotateZ(360deg);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@use '../var';
+
+.cube{
+    position: relative;
+    width: var.$size-face;
+    height: var.$size-face;
+    transform-style: preserve-3d;
+    animation: bounceCube var.$time infinite ease-out;
+    @keyframes bounceCube {
+        0%, 100%{
+            transform: translateZ(4.5rem) scale(1.1);
+        }
+        5%, 90%{
+            transform: translateZ(4.5rem) scale(1);
+        }
+        50%{
+            animation-timing-function: ease-in;
+            transform: translateZ(12rem) scale(1);
+        } 
+    }
+}

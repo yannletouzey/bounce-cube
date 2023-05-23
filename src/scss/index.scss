@@ -1,4 +1,5 @@
 @use './reset';
-@use './components/header';
-@use './components/main';
-@use './components/footer';
+@use './components/body';
+@use './components/scene';
+@use './components/cube';
+@use './components/face';
