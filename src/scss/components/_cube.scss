@@ -8,14 +8,14 @@
     animation: bounceCube var.$time infinite ease-out;
     @keyframes bounceCube {
         0%, 100%{
-            transform: translateZ(4.5rem) scale(1.1);
+            transform: translateZ(4.5rem) scaleX(1.1) scaleY(1.1) scaleZ(0.9);
         }
         5%, 90%{
-            transform: translateZ(4.5rem) scale(1);
+            transform: translateZ(5rem) scaleX(1) scaleY(1) scaleZ(1);
         }
         50%{
             animation-timing-function: ease-in;
-            transform: translateZ(12rem) scale(1);
+            transform: translateZ(12rem) scaleX(1) scaleY(1) scaleZ(1);
         } 
     }
 }
